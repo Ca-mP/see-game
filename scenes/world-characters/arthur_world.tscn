@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck24wp5688jgv"]
+
+[ext_resource type="Texture2D" uid="uid://c6t3u75wqs7re" path="res://images/world-sprites/arthur/arthur.png" id="1_4s8j7"]
+[ext_resource type="Script" path="res://scenes/world-characters/arthur_world.gd" id="1_8elwx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pma1q"]
+size = Vector2(121, 242)
+
+[node name="ArthurWorld" type="Area2D"]
+script = ExtResource("1_8elwx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 8)
+shape = SubResource("RectangleShape2D_pma1q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("1_4s8j7")

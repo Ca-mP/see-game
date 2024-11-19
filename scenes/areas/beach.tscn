@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://csb1pype7yfnt"]
+
+[ext_resource type="Texture2D" uid="uid://cykfxlbgxdwdd" path="res://images/backgrounds/BeachBG.png" id="1_4a7dh"]
+[ext_resource type="PackedScene" uid="uid://ck24wp5688jgv" path="res://scenes/world-characters/arthur_world.tscn" id="2_p8cx2"]
+[ext_resource type="PackedScene" uid="uid://31ptfxrpmbga" path="res://scenes/misc/pointer.tscn" id="3_vjyve"]
+[ext_resource type="Script" path="res://scenes/misc/pointer.gd" id="4_xne1e"]
+
+[node name="Beach" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(801, -183)
+scale = Vector2(4, 4)
+texture = ExtResource("1_4a7dh")
+centered = false
+offset = Vector2(-200.25, 45.75)
+hframes = 2
+vframes = 3
+
+[node name="ArthurWorld" parent="." instance=ExtResource("2_p8cx2")]
+position = Vector2(708, 638)
+
+[node name="Pointer" parent="." instance=ExtResource("3_vjyve")]
+script = ExtResource("4_xne1e")

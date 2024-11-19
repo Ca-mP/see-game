@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://31ptfxrpmbga"]
+
+[ext_resource type="Texture2D" uid="uid://cut06awhqnwb4" path="res://images/misc/magnifier-pointer.png" id="1_qodk2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bos8c"]
+radius = 56.0089
+
+[node name="Pointer" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("1_qodk2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_bos8c")
