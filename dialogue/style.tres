@@ -41,9 +41,7 @@ overrides = {}
 [sub_resource type="Resource" id="Resource_u2eq7"]
 script = ExtResource("1_l4y8f")
 scene = ExtResource("10_idmj7")
-overrides = {
-"box_panel": "\"default_stylebox.tres\""
-}
+overrides = {}
 
 [resource]
 script = ExtResource("10_134au")

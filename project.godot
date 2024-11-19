@@ -26,6 +26,8 @@ directories/dch_directory={
 "arthur": "res://dialogue/arthur.dch",
 "madame_bass": "res://dialogue/madame_bass.dch",
 "nyessie": "res://dialogue/nyessie.dch",
+"olga": "res://dialogue/olga.dch",
+"pinni": "res://dialogue/pinni.dch",
 "salmy": "res://images/portraits/salmy/salmy.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
