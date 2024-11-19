@@ -1,18 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://ck24wp5688jgv"]
+[gd_scene load_steps=3 format=3 uid="uid://ck24wp5688jgv"]
 
 [ext_resource type="Texture2D" uid="uid://c6t3u75wqs7re" path="res://images/world-sprites/arthur/arthur.png" id="1_4s8j7"]
 [ext_resource type="Script" path="res://scenes/world-characters/arthur_world.gd" id="1_8elwx"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pma1q"]
-size = Vector2(121, 242)
-
 [node name="ArthurWorld" type="Area2D"]
 script = ExtResource("1_8elwx")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.5, 8)
-shape = SubResource("RectangleShape2D_pma1q")
+timeline_name = "arthur_dialogue"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(4, 4)
 texture = ExtResource("1_4s8j7")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(6, -112, 38, -44, 18, -40, 16, 28, 63, 130, -63, 118, -24, 26, -25, -51, -43, -49, -45, -66, -15, -78)

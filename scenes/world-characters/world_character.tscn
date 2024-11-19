@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://1wk64uemyu5w"]
+
+[ext_resource type="Script" path="res://scenes/world-characters/world_character.gd" id="1_r515h"]
+
+[node name="WorldCharacter" type="Area2D"]
+script = ExtResource("1_r515h")
