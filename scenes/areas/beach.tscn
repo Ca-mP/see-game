@@ -16,6 +16,6 @@ hframes = 2
 vframes = 3
 
 [node name="ArthurWorld" parent="." instance=ExtResource("2_p8cx2")]
-position = Vector2(708, 638)
+position = Vector2(208, 768)
 
 [node name="Pointer" parent="." instance=ExtResource("3_vjyve")]
