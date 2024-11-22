@@ -12,5 +12,4 @@ func interact():
 		is_speaking = true
 
 func on_timeline_ended():
-	print("timeline over")
 	is_speaking = false

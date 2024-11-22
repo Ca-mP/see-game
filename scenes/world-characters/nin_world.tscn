@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0wq8ol1t7k54"]
+
+[ext_resource type="Script" path="res://scenes/world-characters/world_character.gd" id="1_rvcar"]
+[ext_resource type="Texture2D" uid="uid://bgbyb6byh6men" path="res://images/world-sprites/nin-world.png" id="2_0rnr1"]
+
+[node name="NinWorld" type="Area2D"]
+script = ExtResource("1_rvcar")
+timeline_name = "nin_dialogue"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-15, -24, 40, -11, 56, 23, 41, 95, 57, 126, -50, 126, -34, 22, -63, 11)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2_0rnr1")

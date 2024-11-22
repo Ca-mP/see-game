@@ -15,9 +15,27 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
+"eyes": {
+"export_overrides": {
+"image": "\"res://images/portraits/nin/nin-portrait-bigoleyes.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "neutral": {
 "export_overrides": {
 "image": "\"res://images/portraits/nin/nin-portrait-neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"urgent": {
+"export_overrides": {
+"image": "\"res://images/portraits/nin/nin-portrait-urgent.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

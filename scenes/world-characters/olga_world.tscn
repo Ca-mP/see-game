@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://xspuu87agu2i"]
+
+[ext_resource type="Script" path="res://scenes/world-characters/world_character.gd" id="1_dl0mp"]
+[ext_resource type="Texture2D" uid="uid://bgwff8m70716c" path="res://images/world-sprites/olga-world.png" id="2_fn6pk"]
+
+[node name="OlgaWorld" type="Area2D"]
+script = ExtResource("1_dl0mp")
+timeline_name = "olga_dialogue"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(72, -88, 76, -32, 49, -13, 42, 125, -119, 128, -53, 90, 2, -95)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2_fn6pk")

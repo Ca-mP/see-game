@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cut06awhqnwb4" path="res://images/misc/magnifier-pointer.png" id="1_qodk2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bos8c"]
-radius = 56.0089
+radius = 20.6155
 
 [node name="Pointer" type="Area2D"]
 script = ExtResource("1_l5ksh")

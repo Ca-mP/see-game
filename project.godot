@@ -34,7 +34,11 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "arthur_dialogue": "res://dialogue/arthur_dialogue.dtl",
-"beginning_dialogue": "res://dialogue/beginning_dialogue.dtl"
+"beginning_dialogue": "res://dialogue/beginning_dialogue.dtl",
+"madame_bass_dialogue": "res://dialogue/madame_bass_dialogue.dtl",
+"nin_dialogue": "res://nin_dialogue.dtl",
+"olga_dialogue": "res://dialogue/olga_dialogue.dtl",
+"pinni_dialogue": "res://dialogue/pinni_dialogue.dtl"
 }
 glossary/default_case_sensitive=true
 variables={}

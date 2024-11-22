@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://1tpeu88iahf2"]
+
+[ext_resource type="Script" path="res://scenes/world-characters/world_character.gd" id="1_08oqc"]
+[ext_resource type="Texture2D" uid="uid://c25dxrh2fvuml" path="res://images/world-sprites/pinni-world.png" id="2_r5acm"]
+
+[node name="PinniWorld" type="Area2D"]
+script = ExtResource("1_08oqc")
+timeline_name = "pinni_dialogue"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(55, -27, 30, -12, 2, 48, -107, 107, -108, 128, 93, 127, 92, -14)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2_r5acm")

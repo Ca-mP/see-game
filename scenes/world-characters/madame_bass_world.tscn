@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwngatrt1lb7j"]
+
+[ext_resource type="Script" path="res://scenes/world-characters/world_character.gd" id="1_t37su"]
+[ext_resource type="Texture2D" uid="uid://7k2urqq6cr1v" path="res://images/world-sprites/madame-bass-world.png" id="2_h0ojr"]
+
+[node name="MadameBassWorld" type="Area2D"]
+script = ExtResource("1_t37su")
+timeline_name = "madame_bass_dialogue"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-17, -48, 73, -48, 125, -12, 122, 15, -48, 86, -74, 56, -103, 67, -125, 64, -132, -33, -115, -37, -79, -27, -74, -62)
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionPolygon2D"]
+scale = Vector2(4, 4)
+texture = ExtResource("2_h0ojr")

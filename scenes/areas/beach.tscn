@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://csb1pype7yfnt"]
+[gd_scene load_steps=9 format=3 uid="uid://csb1pype7yfnt"]
 
 [ext_resource type="Texture2D" uid="uid://cykfxlbgxdwdd" path="res://images/backgrounds/BeachBG.png" id="1_4a7dh"]
 [ext_resource type="PackedScene" uid="uid://ck24wp5688jgv" path="res://scenes/world-characters/arthur_world.tscn" id="2_p8cx2"]
 [ext_resource type="PackedScene" uid="uid://31ptfxrpmbga" path="res://scenes/misc/pointer.tscn" id="3_vjyve"]
+[ext_resource type="PackedScene" uid="uid://bwngatrt1lb7j" path="res://scenes/world-characters/madame_bass_world.tscn" id="4_5whqd"]
+[ext_resource type="PackedScene" uid="uid://1tpeu88iahf2" path="res://scenes/world-characters/pinni_world.tscn" id="5_d18u7"]
+[ext_resource type="PackedScene" uid="uid://xspuu87agu2i" path="res://scenes/world-characters/olga_world.tscn" id="6_vu243"]
+[ext_resource type="PackedScene" uid="uid://b0wq8ol1t7k54" path="res://scenes/world-characters/nin_world.tscn" id="7_idung"]
+[ext_resource type="PackedScene" uid="uid://ei50sfaft0wp" path="res://scenes/world-characters/nyessie_world.tscn" id="8_3kolk"]
 
 [node name="Beach" type="Node2D"]
 
@@ -14,8 +19,24 @@ centered = false
 offset = Vector2(-200.25, 45.75)
 hframes = 2
 vframes = 3
+metadata/_edit_lock_ = true
 
 [node name="ArthurWorld" parent="." instance=ExtResource("2_p8cx2")]
-position = Vector2(208, 768)
+position = Vector2(904, 625)
+
+[node name="MadameBassWorld" parent="." instance=ExtResource("4_5whqd")]
+position = Vector2(175, 335)
+
+[node name="PinniWorld" parent="." instance=ExtResource("5_d18u7")]
+position = Vector2(427, 434)
+
+[node name="OlgaWorld" parent="." instance=ExtResource("6_vu243")]
+position = Vector2(510, 673)
+
+[node name="NinWorld" parent="." instance=ExtResource("7_idung")]
+position = Vector2(314, 615)
+
+[node name="NyessieWorld" parent="." instance=ExtResource("8_3kolk")]
+position = Vector2(135, 575)
 
 [node name="Pointer" parent="." instance=ExtResource("3_vjyve")]
